@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Items = () => {
     return (
-        <div className='w-full mt-9 grid grid-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='w-full mt-9 grid grid-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-b-[1px] border-slate-400'>
             {phonesData.Phones.map((element, index) => {
                 return <div key={index} className='relative text-center w-full aspect-square hover:bg-blue-900 hover:text-white transition-all duration-1000'>
                     <Image

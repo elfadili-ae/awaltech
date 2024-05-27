@@ -3,7 +3,7 @@ import Items from './Items'
 
 const NewPhones = () => {
     return (
-        <section id='new-phones' className='w-full bg-white py-8 max-w-[1920px]'>
+        <section id='new-phones' className='w-full bg-white pt-8 pb-2 max-w-[1920px]'>
             <h1 className='ml-5 font-semibold text-2xl md:text-4xl'>Top New Awal Phones</h1>
             <Items />
         </section>

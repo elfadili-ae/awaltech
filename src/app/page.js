@@ -1,4 +1,5 @@
 'use client'
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Latest from "@/components/Latest";
 import Navbar from "@/components/Navbar";
@@ -39,7 +40,7 @@ export default function Home() {
   return (
     <main className="w-full mx-auto max-w-[1920px] min-h-screen bg-black relative">
       <div className='w-11 h-5 absolute top-5 left-6 z-20'>
-        <Image className='cursor-pointer' src='/awal_logo_white.png' alt='AwalTheck logo' width={44} height={21} />
+        <Image className='cursor-pointer' src='/awal_logo_black.png' alt='AwalTheck logo' width={44} height={21} />
       </div>
       <div
         onClick={() => { menuHandler(true) }}
@@ -52,7 +53,7 @@ export default function Home() {
       <Hero />
       <Latest />
       <NewPhones />
-      <div className="w-full h-screen"></div>
+      <Footer />
     </main>
   );
 }
