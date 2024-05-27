@@ -20,7 +20,6 @@ export default function Home() {
       } else {
         setIsDown(false);
       }
-      console.log(window.scrollY)
     }
     document.addEventListener('scroll', handleMenubutton);
 

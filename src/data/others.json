@@ -1,0 +1,20 @@
+{
+    "Others": [
+        {
+            "name": "Awal Tablets",
+            "imgSrc": "/others/tablet1.png"
+        },
+        {
+            "name": "MokaBook Series",
+            "imgSrc": "/others/laptop1.png"
+        },
+        {
+            "name": "Magana 7",
+            "imgSrc": "/others/watches.png"
+        },
+        {
+            "name": "Accessories",
+            "imgSrc": "/others/accessories.png"
+        }
+    ]
+}

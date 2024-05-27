@@ -1,0 +1,20 @@
+{
+    "Phones": [
+        {
+            "name": "Awal X3 Ultra",
+            "imgSrc": "/phones/phone1.png"
+        },
+        {
+            "name": "Awal Y5 | Y5+",
+            "imgSrc": "/phones/phone2.png"
+        },
+        {
+            "name": "Awal FlipX",
+            "imgSrc": "/phones/phone3.png"
+        },
+        {
+            "name": "Awal Fold",
+            "imgSrc": "/phones/phone4.png"
+        }
+    ]
+}
