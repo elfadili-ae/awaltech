@@ -1,6 +1,10 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
+import Items from './Items';
+import Campaigns from './Campaigns';
+import Events from './Events';
+import Apps from './Apps';
 
 const Navbar = ({ menuHandler }) => {
     const [sliderPosition, setSliderPosition] = useState(0);
@@ -26,12 +30,12 @@ const Navbar = ({ menuHandler }) => {
         }
     };
     return (
-        <header className='fixed z-30 max-w-[1920px] min-h-screen m-auto w-full mx-auto bg-white'>
-            <nav className='h-full min-h-20 bg-black max-md:pt-6 px-3 text-white flex items-center flex-col gap-4 md:gap-8 md:flex-row relative transition-all duration-1000'>
+        <header className='absolute z-30 max-w-[1920px] w-full h-screen mx-auto bg-black/80 backdrop-blur-md'>
+            <nav className='h-32 md:h-20 bg-black max-md:pt-6 px-3 text-white flex flex-col items-center md:gap-8 md:flex-row relative transition-all duration-1000'>
                 <div className='w-11 h-5'>
                     <Image className='cursor-pointer' src='/awal_logo_white.png' alt='AwalTheck logo' width={44} height={21} />
                 </div>
-                <div className="h-20 text-white text-lg flex w-full items-center justify-between max-w-sm relative">
+                <div className="h-full text-white text-lg flex w-full items-center justify-between max-w-sm relative">
                     <div
                         id="slider"
                         className={`absolute h-2 bottom-0 bg-blue-600 transition-all duration-300 ease-in-out`}
@@ -70,7 +74,6 @@ const Navbar = ({ menuHandler }) => {
                         Apps
                     </button>
                 </div>
-
                 <svg id='searchButton' className='absolute top-6 max-md:left-6 md:right-16 cursor-pointer transform transition-all duration-300' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50">
                     <path className='fill-white' d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
                 </svg>
@@ -80,6 +83,18 @@ const Navbar = ({ menuHandler }) => {
                     <div className='absolute w-full h-[2px] bg-white transform -rotate-45'></div>
                 </div>
             </nav>
+
+            <div className='w-full h-[calc(100vh-80px)] overflow-y-auto'>
+                {currentTab == 0 && <>
+                    <Items />
+                    <div className='h-20 w-full bg-black text-center text-white '>
+                        AWALTECH
+                    </div>
+                </>}
+                {currentTab == 1 && <Campaigns />}
+                {currentTab == 2 && <Events />}
+                {currentTab == 3 && <Apps />}
+            </div>
         </header>
     )
 }

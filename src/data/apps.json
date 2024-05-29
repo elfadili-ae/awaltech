@@ -1,0 +1,16 @@
+{
+    "Apps": [
+        {
+            "name": "Awal Store",
+            "imgSrc": "/apps/apps1.png"
+        },
+        {
+            "name": "Awal Kids",
+            "imgSrc": "/apps/apps3.png"
+        },
+        {
+            "name": "Gaming Verse",
+            "imgSrc": "/apps/apps2.png"
+        }
+    ]
+}
