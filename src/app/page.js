@@ -2,6 +2,7 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Latest from "@/components/Latest";
+import Model from "@/components/Model";
 import Navbar from "@/components/Navbar";
 import NewPhones from "@/components/NewPhones";
 import Image from "next/image";
@@ -52,6 +53,7 @@ export default function Home() {
       {menu && <Navbar menuHandler={menuHandler} />}
       <Hero />
       <Latest />
+      <Model />
       <NewPhones />
       <Footer />
     </main>

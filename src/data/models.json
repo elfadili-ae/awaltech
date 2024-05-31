@@ -1,0 +1,38 @@
+{
+    "Models": [
+        {
+            "id": 1,
+            "title": "Awal X5 Natural",
+            "color": ["white", "#FFE7B9", "#6F6C64"],
+            "img": "/textures/green.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Awal X5 Black",
+            "color": ["black", "#6395FF", "#21242E"],
+            "img": "/textures/purple.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Awal X5 Black",
+            "color": ["blue", "#FFFFFF", "#C9C8C2"],
+            "img": "/textures/green.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Awal X5 Black",
+            "color": ["orange", "#3B3B3B", "#181819"],
+            "img": "/textures/purple.jpg"
+        }
+    ],
+    "Sizes": [
+        {
+            "value": "small",
+            "label": "6.1\""
+        },
+        {
+            "value": "large",
+            "label": "6.7\""
+        }
+    ]
+}

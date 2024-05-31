@@ -25,7 +25,7 @@ const Items = () => {
         })
     }, [])
     return (
-        <div ref={gridRef} className='w-full bg-white pt-4 grid grid-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-b-[1px] border-slate-400'>
+        <div ref={gridRef} className='w-full bg-white pt-4 grid grid-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-b-[1px] border-slate-400 overflow-hidden'>
             {phonesData.Phones.map((element, index) => {
                 return <div key={index} className='opacity-0 relative text-center w-full aspect-square hover:bg-blue-900 hover:text-white transition-all duration-300'>
                     <Image
