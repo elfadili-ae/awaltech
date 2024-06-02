@@ -30,7 +30,7 @@ const Navbar = ({ menuHandler }) => {
         }
     };
     return (
-        <header className='absolute top-0 left-0 z-30 max-w-[1920px] w-full h-screen mx-auto bg-black/80 backdrop-blur-md'>
+        <header className='fixed top-0 left-0 z-30 max-w-[1920px] w-full h-screen mx-auto bg-black/80 backdrop-blur-md'>
             <nav className='h-32 md:h-20 bg-black max-md:pt-6 px-3 text-white flex flex-col items-center md:gap-8 md:flex-row relative transition-all duration-1000'>
                 <div className='w-11 h-5'>
                     <Image className='cursor-pointer' src='/awal_logo_white.png' alt='AwalTheck logo' width={44} height={21} />
