@@ -165,7 +165,7 @@ const Latest = () => {
                                 alt="Flip phone photo" />
                             <div
                                 className="absolute right-3 top-3 py-5 text-right text-black">
-                                <h2 className="text-white font-bold tex-right text-2xl md:text-4xl">Meet FlipX:<br />Pocket's Friend</h2>
+                                <h2 className="text-white font-bold tex-right text-2xl md:text-4xl">Meet FlipX:<br />Pocket&apos;s Friend</h2>
                             </div>
                         </div>
                         <div
