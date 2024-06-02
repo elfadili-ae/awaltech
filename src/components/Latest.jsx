@@ -1,14 +1,26 @@
 import Image from 'next/image';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import VideoModal from './VideoModal';
 
 const Latest = () => {
+    const [isVideo, setIsVideo] = useState(false);
     useEffect(() => {
         const init = async () => {
             const { Carousel, initTWE } = await import("tw-elements");
             initTWE({ Carousel });
         };
         init();
-    }, []);
+
+        if (isVideo) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isVideo]);
+
+    const handleVideo = (val) => {
+        setIsVideo(val)
+    }
 
     return (
         <section id='latest' className='w-full max-w-[1920px] flex flex-col md:flex-row'>
@@ -53,11 +65,11 @@ const Latest = () => {
                                 className="absolute left-3 top-3 py-5 text-center text-black">
                                 <h2 className="text-white font-bold text-left text-2xl md:text-4xl">Awal X3 Ultra:<br />Official film</h2>
                             </div>
-                            <div className='absolute w-12 h-12 md:w-16 md:h-16 flex justify-center items-center top-[45%] right-[45%] z-[1]'>
-                                <svg className='w-full h-full border-[4px] rounded-full' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.448 142.448">
-                                    <path className='fill-white' d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293 c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z" />
+                            <button onClick={() => { handleVideo(true) }} className='absolute cursor-pointer w-12 h-12 md:w-16 md:h-16 flex justify-center items-center top-[45%] right-[45%] z-[1] group hover:animate-pulse'>
+                                <svg className='w-full h-full border-[4px] rounded-full group-hover:border-red-400' version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.448 142.448">
+                                    <path className='fill-white group-hover:fill-red-400' d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293 c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z" />
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                         <div
                             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
@@ -235,6 +247,8 @@ const Latest = () => {
                     </button>
                 </div>
             </div>
+
+            {isVideo && <VideoModal handleVideo={handleVideo} />}
         </section>
     )
 }
