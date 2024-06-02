@@ -31,8 +31,8 @@ const Model = () => {
 
         if (size === 'large') {
             animateWithGsapTimeLine(tl, small, smallRotation, '#view1', '#view2', {
-                transform: 'translateX(-100%)',
-                duration: 2
+                transform: 'translateX(-105%)',
+                duration: 2,
             })
         }
         if (size === 'small') {
@@ -44,11 +44,11 @@ const Model = () => {
 
     }, [size,]);
     return (
-        <section className='w-full p-4 md:p-8 max-w-[1920px]'>
+        <section className='w-full p-4 md:p-8 max-w-[1920px] bg-gray-900'>
             <div className='max-w-[1120px] relative overflow-hidden mx-auto'>
                 <h1 className='text-white text-xl md:text-2xl'>Take a closer look.</h1>
                 <div className='w-full flex-col items-center mx-auto mt-5'>
-                    <div className='w-full h-[75vh] md:[90vh] overflow-hidden relative'>
+                    <div className='w-full bg-gray-900 h-[75vh] md:[90vh] overflow-hidden relative'>
                         <ModelView
                             index={1}
                             groupRef={small}
@@ -68,7 +68,7 @@ const Model = () => {
                             size={size} />
 
                         <Canvas
-                            className='w-full h-full'
+                            className='w-full h-screen max-w-[1900px] mx-auto'
                             style={{
                                 position: 'fixed',
                                 top: 0,

@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 
 const Apps = () => {
-    console.log(appsData);
     return (
         <div className='w-full pt-4 grid grid-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
             {appsData.Apps.map((element, index) => {
