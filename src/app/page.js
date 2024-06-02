@@ -41,15 +41,28 @@ export default function Home() {
   return (
     <main className="w-full mx-auto max-w-[1920px] min-h-screen bg-black relative">
       <div className='w-11 h-5 absolute top-5 left-6 z-20'>
-        <Image className='cursor-pointer' src='/awal_logo_black.png' alt='AwalTheck logo' width={44} height={21} />
+        <Image
+          className='cursor-pointer object-contain'
+          src='/awal_logo_black.png'
+          alt='AwalTheck logo'
+          width={44}
+          height={21}
+          priority="high"
+          style={{ height: 'auto' }}
+        />
       </div>
-      <div
-        onClick={() => { menuHandler(true) }}
-        className={`fixed top-4 ${isDown && 'bg-stone-700'} z-20 right-6 w-11 h-11 flex flex-col justify-center items-center group ${menu && 'hidden'} hover:bg-white transition-all duration-500 gap-[6px] rounded-full cursor-pointer`}>
-        <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
-        <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
-        <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
+      <div className="fixed w-full z-20 top-0 left-0">
+        <div className="w-full max-w-[1920px] mx-auto flex justify-end p-3">
+          <div
+            onClick={() => { menuHandler(true) }}
+            className={`${isDown && 'bg-stone-700'} w-11 h-11 flex flex-col justify-center items-center group ${menu && 'hidden'} hover:bg-white transition-all duration-500 gap-[6px] rounded-full cursor-pointer`}>
+            <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
+            <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
+            <div className={`w-6 h-[2px] bg-white group-hover:bg-black transition-all duration-500`}></div>
+          </div>
+        </div>
       </div>
+
       {menu && <Navbar menuHandler={menuHandler} />}
       <Hero />
       <Latest />
