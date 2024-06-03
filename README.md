@@ -1,8 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AwalTech
+
+![Next JS](https://img.shields.io/badge/next.js-8A2BE2)
+![Next JS](https://img.shields.io/badge/tailwindcss-8A2BE2)
+![Next JS](https://img.shields.io/badge/gsap-8A2BE2)
+![Next JS](https://img.shields.io/badge/react_fiber-8A2BE2)
+
+
+Welcome to AwalTech, the groundbreaking mobile phone brand that brings you the latest in technology and design. This project contains the source code for the AwalTech website landing page, providing users with a seamless and engaging online experience that showcases innovative products.
+
+## Technologies Used
+- Next.js: For server-side rendering and optimized performance.
+- GSAP (GreenSock Animation Platform): To create smooth, high-performance animations.
+- TW Elements: Utilized Tailwind CSS elements for a streamlined, responsive design.
+- TailwindCSS: For rapid and custom styling.
+- React Three Fiber: To integrate 3D graphics seamlessly within React components.
+
+  ## Live Demo
+Check out the live demo of AwalTech [here](https://awaltech.vercel.app).
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+1. Clone the repository:
+   ```bash
+   https://github.com/elfadili-ae/awaltech.git
+   ```
+2. Navigate to the directory:
+    ```bash
+   cd awaltech
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+### Running the Application
+Run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +48,5 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+EL FADILI ABDESSAMAD - elfadili.ae@gmail.com
